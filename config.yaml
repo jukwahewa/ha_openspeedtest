@@ -1,7 +1,7 @@
 name: "HA OpenSpeedTest.com"
 description: "Home Assistant OpenSpeedTest.com add-on!"
 version: "1.0.0"
-slug: "open_speed_test"
+slug: "ha_openspeedtest"
 init: false
 arch:
   - aarch64
