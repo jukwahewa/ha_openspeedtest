@@ -1,8 +1,10 @@
-name: "HA OpenSpeedTest.com"
-description: "Home Assistant OpenSpeedTest.com add-on!"
-version: "1.0.0"
-slug: "ha_openspeedtest"
+name: HA OpenSpeedTest.com
+description: Home Assistant OpenSpeedTest.com add-on!
+version: 1.0.0
+url: https://github.com/jukwahewa/ha_openspeedtest
+slug: ha_openspeedtest
 init: false
+hassio_api: true
 arch:
   - aarch64
   - amd64
@@ -14,3 +16,11 @@ ports:
   3000/tcp: 3000
   3001/tcp: 3001
 image: openspeedtest/latest
+options: 
+  domain: speedtest.yourdomain.com
+  ssl: true
+  user_email: speedtest@yourdomain.com
+schema:
+  domain: str
+  ssl: bool
+  user_email: str
