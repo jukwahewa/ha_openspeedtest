@@ -13,3 +13,4 @@ startup: services
 ports:
   3000/tcp: 3000
   3001/tcp: 3001
+image: openspeedtest/latest
